@@ -28,3 +28,5 @@ We implement our models and training framework based on hugginface-transformers 
 ## Experiments
 In *tests*, we saved experiment files. One should move the desired script to the root directory and then execute it. It will train models according to configurations specified in the script. Experiment scripts are compatible with fully supervised and few-shot learning and their evaluations.
 
+## Remarks
+This repository is still under construction; we will add more experiment scripts/results and comments on files overtime.
