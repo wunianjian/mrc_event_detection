@@ -1,0 +1,69 @@
+{
+    "Be-Born":"A {} Event occurs whenever a PERSON Entity is given birth to. Please note that we do not include the birth of other things or ideas.",
+
+    "Marry":"{} Events are official Events, where two people are married under the legal definition.",
+
+    "Divorce":"A {} Event occurs whenever two people are officially divorced under the legal definition of divorce. We do not include separations or church annulments.",
+
+    "Injure":"An {} Event occurs whenever a PERSON Entity experiences physical harm. {} Events can be accidental, intentional or self-inflicted.",
+
+    "Die":"A {} Event occurs whenever the life of a PERSON Entity ends. {} Events can be accidental, intentional or self-inflicted.",
+
+    "Transport":"A {} Event occurs whenever an ARTIFACT (WEAPON or VEHICLE) or a PERSON is moved from one PLACE (GPE, FACILITY, LOCATION) to another.",
+
+    "Transfer-Ownership":"{} Events refer to the buying, selling, loaning, borrowing, giving, or receiving of artifacts or organizations.",
+
+    "Transfer-Money":"{} Events refer to the giving, receiving, borrowing, or lending money when it is not in the context of purchasing something. The canonical examples are: (1) people giving money to organizations (and getting nothing tangible in return); and (2) organizations lending money to people or other orgs.",
+
+    "Start-Org":"A {} Event occurs whenever a new ORGANIZATION is created.",
+
+    "Merge-Org":"A {} Event occurs whenever two or more ORGANIZATION Entities come together to form a new ORGANIZATION Entity. This Event applies to any kind of ORGANIZATION, including government agencies. It also includes joint ventures.",
+
+    "Declare-Bankruptcy":"A {} Event will occur whenever an Entity officially requests legal protection from debt collection due to an extremely negative balance sheet.",
+
+    "End-Org":"An {} Event occurs whenever an ORGANIZATION ceases to exist (in other words \u2018goes out of business\u2019).",
+
+    "Attack":"An {} Event is defined as a violent physical act causing harm or damage. {} Events include any such Event not covered by the INJURE or DIE subtypes, including Events where there is no stated agent. The {} Event type includes less specific violence-related nouns such as \u2018conflict\u2019, \u2018clashes\u2019, and \u2018fighting\u2019. \u2018Gunfire\u2019, which has the qualities of both an Event and a weapon, should always be tagged as an {} Event, if only for the sake of consistency. A \u2018coup\u2019 is a kind of {} (and so is a \u2018war\u2019).",
+
+    "Demonstrate":"A DEMONSRATE Event occurs whenever a large number of people come together in a public area to protest or demand some sort of official action. {} Events include, but are not limited to, protests, sit-ins, strikes, and riots.",
+
+    "Meet":"A {} Event occurs whenever two or more Entities come together at a single location and interact with one another face-to-face. {} Events include talks, summits, conferences, meetings, visits, and any other Event where two or more parties get together at some location.",
+
+    "Phone-Write":"A {} Event occurs when two or more people directly engage in discussion which does not take place \u2018face-to-face\u2019. To make this Event less open-ended, we limit it to written or telephone communication where at least two parties are specified. Communication that takes place in person should be considered a MEET Event. The very common \u2018PERSON told reporters\u2019 is not a taggable Event, nor is \u2018issued a statement\u2019. A {} Event must be explicit phone or written communication between two or more parties.",
+
+    "Personell":"All PERSONNEL Events can have an POSITION attribute. The object populating the POSITION-ARG slot in a PERSONNEL Event will be a VALUE of type JOBTITLE, which consists of a string taken from within the scope of the Event.",
+
+    "Start-Position":"A {} Event occurs whenever a PERSON Entity begins working for (or changes offices within) an ORGANIZATION or GPE. This includes government officials starting their terms, whether elected or appointed.",
+
+    "End-Position":"An {} Event occurs whenever a PERSON Entity stops working for (or changes offices within) an ORGANIZATION or GPE. The change of office case will only be taggable when the office being left is explicitly mentioned within the scope of the Event. This includes government officials ending terms, whether elected or appointed.",
+
+    "Nominate":"A {} Event occurs whenever a PERSON is proposed for a STARTPOSITION Event by the appropriate PERSON, through official channels.",
+
+    "Elect":"An {} Event occurs whenever a candidate wins an election designed to determine the PERSON argument of a START-POSITION Event.",
+
+    "Arrest-Jail":"A JAIL Event occurs whenever the movement of a PERSON is constrained by a state actor (a GPE, its ORGANIZATION subparts, or its PERSON representatives).",
+
+    "Release-Parole":"A RELEASE Event occurs whenever a state actor (GPE, ORGANIZATION subpart, or PERSON representative) ends its custody of a PERSON Entity. This can be because the sentence has ended, because the charges are dropped, or because parole has been granted.",
+
+    "Trial-Hearing":"A TRIAL Event occurs whenever a court proceeding has been initiated for the purposes of determining the guilt or innocence of a PERSON, ORGANIZATION or GPE accused of committing a crime. A HEARING Event occurs whenever a state actor (GPE, ORGANIZATION subpart, or PERSON representative) officially gathers to discuss some criminal legal matter. A {} Event can have a CRIME attribute filled by a string from the text. It is important that the PROSECUTER-ARG be a state actor (GPE, ORGANIZATION subpart or PERSON representing them).",
+
+    "Charge-Indict":"A CHARGE Event occurs whenever a PERSON, ORGANIZATION or GPE is accused of a crime by a state actor (GPE, an ORGANIZATION subpart of a GPE or a PERSON representing a GPE). An INDICT Event occurs whenever a state actor (GPE, ORG subpart of a GPE or PERSON agent of a GPE) takes official legal action to follow up on an accusation. A {} Event can have a CRIME-ARG attribute filled by a string from the text.",
+
+    "Sue":"A {} Event occurs whenever a court proceeding has been initiated for the purposes of determining the liability of a PERSON, ORGANIZATION or GPE accused of committing a crime or neglecting a commitment. It can have a CRIME attribute filled by a string from the text. It is not important that the PLAINTIFF-ARG be a state actor (a GPE, an ORGANIZATION subpart or a PERSON representing them).",
+
+    "Convict":"A {} Event occurs whenever a TRY Event ends with a successful prosecution of the DEFENDANT-ARG. In other words, a PERSON, ORGANIZATION or GPE Entity is convicted whenever that Entity has been found guilty of a CRIME. It can have a CRIME attribute filled by a string from the text. {} Events will also include guilty pleas.",
+
+    "Sentence":"A {} Event takes place whenever the punishment (particularly incarceration) for the DEFENDANT-ARG of a TRY Event is issued by a state actor (a GPE, an ORGANIZATION subpart or a PERSON representing them). It can have a CRIME-ARG attribute filled by a CRIME Value and a {}ARG attribute filled by a {} Value.",
+
+    "Fine":"A {} Event takes place whenever a state actor issues a financial punishment to a GPE, PERSON or ORGANIZATION Entity, typically as a result of court proceedings. It can have a CRIME attribute filled by a string from the text. Please note that settlements between two parties will not be annotated as {} Events, but rather as TRANSFER-MONEY Events. This will be true even when the settlement is brought about by some other JUSTICE Event (such as a SUE Event).",
+
+    "Execute":"An {} Event occurs whenever the life of a PERSON is taken by a state actor (a GPE, its ORGANIZATION subparts, or PERSON representatives). It can have a CRIME attribute filled by a string from the text.",
+
+    "Extradite":"An {} Event occurs whenever a PERSON is sent by a state actor from one PLACE (normally the GPE associated with the state actor, but sometimes a FACILITY under its control) to another place (LOCATION, GPE or FACILITY) for the purposes of legal proceedings there. Wherever the ORIGIN-ARG is not explicitly stated, the slot will not be filled.",
+
+    "Acquit":"An {} Event occurs whenever a trial ends but fails to produce a conviction. This will include cases where the charges are dropped by the PROSECUTORARG.",
+
+    "Appeal":"An {} Event occurs whenever the decision of a court is taken to a higher court for review.",
+
+    "Pardon":"A {} Event occurs whenever a head-of-state or their appointed representative lifts a sentence imposed by the judiciary."
+}
